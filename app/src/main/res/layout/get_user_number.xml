@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="#b3adad"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/getOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="GET OTP"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
