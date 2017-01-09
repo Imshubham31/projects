@@ -7,6 +7,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.RingtoneManager;
@@ -26,7 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by gauravbhoyar on 08/01/17.
+ * Created by shubham on 08/01/17.
  */
 
 public class Login extends AppCompatActivity {
@@ -36,6 +37,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        DBHandler handler = new DBHandler(this);
+        SQLiteDatabase database = handler.getWritableDatabase();
         TextView forgotPassword = (TextView) findViewById(R.id.forgotPassword);
         SpannableString content = new SpannableString("Forgot Password?");
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
@@ -59,6 +62,8 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this, "Either username or password is incorrect!", Toast.LENGTH_SHORT).show();
                 else{
                     Toast.makeText(Login.this, "You've successfully logged in!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Login.this,LandingPage.class);
+                    startActivity(intent);
                 }
             }
         });

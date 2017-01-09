@@ -25,6 +25,9 @@
         <activity
             android:name=".ChangePassword"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandingPage"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

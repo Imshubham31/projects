@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Medikart</string>
+    <string name="arrow">&#xf061;</string>
 </resources>
