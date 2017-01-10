@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#96000000"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buy"
+            android:layout_below="@id/imageView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/medicine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crocin"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/medicine_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Rs 280.00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/medicine_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="dfsdggdfgdfsgdfdfg dfgkldln f gkdfjgndgndflgdfkgdfngdfn lgnd gdlfgnd fgdfgn dfgdklgdfn dfgldgn dgdfklgdflgdf dlgdflngdf nldgdfnlgkdfngdlkgdnlkdn dlg gdjgl dj dlgjdflgdjf gldfjldf dlgh dlfgjdf hdfdfj hdfdh dldj ljfgldfjgdf glifjgdflgjdfg iolgdflgdfjgfo  ofgjdfogjdf  dofg dfddf dfgd df dfdfjgdg djgdf dfsdggdfgdfsgdfdfg dfgkldln f gkdfjgndgndflgdfkgdfngdfn lgnd gdlfgnd fgdfgn dfgdklgdfn dfgldgn dgdfklgdflgdf dlgdflngdf nldgdfnlgkdfngdlkgdnlkdn dlg gdjgl dj dlgjdflgdjf gldfjldf dlgh dlfgjdf hdfdfj hdfdh dldj ljfgldfjgdf glifjgdflgjdfg iolgdflgdfjgfo  ofgjdfogjdf  dofg dfddf dfgd df dfdfjgdg djgdf"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="BUY"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>
